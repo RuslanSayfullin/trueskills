@@ -1,11 +1,67 @@
 {% extends 'trueskills/base.html' %}
+{% load static %}
 
 {% block content %}
-    <section class="about">
-    <h1>{{ title }}</h1>
-        <li>Регион</li>
-        <li>Наименование и адрес локации</li>
-        <li>Дата мероприятия</li>
-        <li>Количество свободных зон в локации</li>
-    </section>
+<section class="booking">
+  <div class="booking__info">
+      <h1>Регион: Алтайский край</h1>
+      <p>Наименование и адрес локации: Туристическая база "Озеро Красилово", Косихинский район, с. Озеро-Красилово, ул. Пушкина д.1</p>
+      <ul>Зоны локации:</ul>
+  </div>
+</section>
+<section class="booking">
+  <div class="booking__info">
+    <li>Шатер - 2 шт.</li>
+    <li>Вместимость - до 50 чел</li>
+    <li>5000 р/сутки</li>
+    <button>Оформить заказ.</button>
+  </div>
+  <div class="about__images">
+    <img class="about__image" src="{% static 'trueskills/img/altays.jpg' %}">
+  </div>
+</section>
+<section class="booking">
+  <div class="booking__info">
+    <li>Летний домик- 5 шт.</li>
+    <li>Вместимость - до 10 чел</li>
+    <li>3000 р/сутки</li>
+    <button>Оформить заказ.</button>
+  </div>
+  <div class="about__images">
+    <img class="about__image" src="{% static 'trueskills/img/altay.jpg' %}">
+  </div>
+</section>
+<section class="booking">
+  <div class="booking__info">
+    <li>Беседка - 10 шт</li>
+    <li>Вместимость - до 15 чел</li>
+    <li>2000 р/сутки</li>
+    <button>Оформить заказ.</button>
+  </div>
+  <div class="about__images">
+    <img class="about__image" src="{% static 'trueskills/img/byseda.jpg' %}">
+  </div>
+</section>
+<section class="booking">
+  <div class="booking__info">
+    <li>Игровая комната 1 шт</li>
+    <li>Вместимость - до 10 чел</li>
+    <li>300 р/час за 1 посетителя</li>
+    <button>Оформить заказ.</button>
+  </div>
+  <div class="about__images">
+    <img class="about__image" src="{% static 'trueskills/img/game.jpg' %}">
+  </div>
+</section>
+<section class="booking">
+  <div class="booking__info">
+    <li>Спортивная площадка 1 шт</li>
+    <li>Вместимость - до 15 чел</li>
+    <li>200 р/час за 1 посетителя</li>
+    <button>Оформить заказ.</button>
+  </div>
+  <div class="about__images">
+    <img class="about__image" src="{% static 'trueskills/img/sport.jpg' %}">
+  </div>
+</section>
 {% endblock content %}

@@ -138,3 +138,27 @@ button {
   box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
   padding: 15px;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  background: url('../img/back.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  background: url('../img/back2.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
