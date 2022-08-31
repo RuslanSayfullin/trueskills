@@ -2,9 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 menu = [{'title': "Главная страница", 'url_name': 'index'},
-        {'title': "Страница с результатами поиска локаций", 'url_name': 'location'},
-        {'title': "Страница выбора конкретной зоны из свободных в локации", 'url_name': 'rest_zone'},
-        {'title': "Страница бронирования", 'url_name': 'booking_page'}
+        {'title': "Акции", 'url_name': 'location'},
+        {'title': "Поиск", 'url_name': 'rest_zone'},
+        {'title': "Управление бронированием", 'url_name': 'booking_page'}
 ]
 
 
