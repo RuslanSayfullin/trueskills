@@ -10,7 +10,6 @@
 </head>
 <body>
   <header>
-  <div class="header">
   {% block mainmenu %}
       <ul id="mainmenu" class="mainmenu">
         <li class="logo"><a href="{% url 'index' %}"><div class="logo"></div></a></li>
@@ -19,7 +18,6 @@
         {% endfor %}
       </ul>
   {% endblock mainmenu %}
-  </div>
   </header>
   {% block content %}
 

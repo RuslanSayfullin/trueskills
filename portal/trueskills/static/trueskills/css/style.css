@@ -4,17 +4,15 @@
 }
 
 header {
-  display: flex;
-  justify-content: space-evently;
-  align-items: center;
-}
-.header {
-	background: #3F4137;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3F4137;
 	height: 60px;
 }
 
 .logo {
-	background: url('../img/main.jpg') no-repeat 10px 5px;
+	background: url('../img/favicon.ico') no-repeat 10px 5px;
 	width: 70px;
 	height: 60px;
 }
@@ -24,6 +22,7 @@ ul.mainmenu {
 	margin: 0;
 	padding: 0;
 	height: 60px;
+	width: 2000px;
 	color: #fdc073;
 	font-size: 20px;
 	overflow: hidden;
@@ -41,56 +40,9 @@ ul.mainmenu li a {
 }
 ul.mainmenu li a:hover {
 	color: #FDA83D;
-
-.footer {
-    padding: 90px 20px;
-    font-size: 16px;
-    font-weight: 600;
 }
 
-.footer__copyright {
-    margin-top: 40px
-    text-align: center;
-    opacity: 0.5;
-}
-
-.footer__container {
-    display: flex;
-    justify-content: center;
-}
-
-
-.footer__group {
- margin-left: 80px;
-}
-
-.footer h3 {
-    font-size: 16px;
-    opacity: 0.7;
-    margin-bottom: 30px;
-}
-
-.footer__links{
-    display: flex;
-    flex-direction: column;
-}
-.footer__links a {
-    margin-bottom: 15px;
-}
-
-button {
-  font-family: 'Raleway', sans—serif;
-  font-size: 15px;
-  color: #fff;
-  background-color: #23a030;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
-  padding: 15px;
-}
-
-.about {
+.booking {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -100,33 +52,4 @@ button {
   background-position: center;
   background-size: cover;
   position: relative;
-}
-
-.about__image {
-  width: 500px;
-}
-
-.about h1 {
-  font-size: 70px;
-  line-height: 76px;
-}
-
-.about p {
-  font-size: 18px;
-  line-height: 30px;
-  opacity: 0.8;
-}
-
-.about button {
-  font-size: 18px;
-  padding: 20px 25px;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
-.about__info {
-  max-width: 550px;
-}
-.form__container {
-  width: 550px;
 }

@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-menu = [{'title': "Главная страница", 'url_name': 'index'},
+menu = [
         {'title': "Акции", 'url_name': 'location'},
         {'title': "Поиск", 'url_name': 'rest_zone'},
         {'title': "Управление бронированием", 'url_name': 'booking_page'}
