@@ -21,7 +21,7 @@ def location(request):
         'menu': menu,
         'title': 'Страница с результатами поиска локаций'
     }
-    return render(request, 'trueskills/location.html', context=context)
+    return render(request, 'trueskills/search.html', context=context)
 
 
 def rest_zone(request):
@@ -29,7 +29,7 @@ def rest_zone(request):
         'menu': menu,
         'title': 'Страница с результатами поиска локаций'
     }
-    return render(request, 'trueskills/rest_zone.html', context=context)
+    return render(request, 'trueskills/seat.html', context=context)
 
 
 def booking_page(request):
@@ -37,4 +37,4 @@ def booking_page(request):
         'menu': menu,
         'title': 'Страница с результатами поиска локаций'
     }
-    return render(request, 'trueskills/booking_page.html', context=context)
+    return render(request, 'trueskills/booking.html', context=context)
