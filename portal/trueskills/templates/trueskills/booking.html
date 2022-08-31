@@ -1,17 +1,58 @@
 {% extends 'trueskills/base.html' %}
 
 {% block content %}
-    <h1>{{ title }}</h1>
-        <p>Страница бронирования</p>
-        <li>Данные о заказе</li>
-            <ul>Регион</ul>
-            <ul>Адрес локации</ul>
-            <ul>Дата мероприятия</ul>
-            <ul>Количество человек</ul>
-            <ul>Стоимость</ul>
-        <li>Выбор дополнительных услуг:</li>
-            <ul>Организация питания</ul>
-            <ul>Услуги аниматоров</ul>
-            <ul>Услуги ведущего</ul>
-            <ul>Услуги детского такси</ul>
+    <section class="form">
+      <div class="form__container">
+        <h1>Внесите данные о выбранных услугах</h1>
+        <fotm>
+            <div class="form__group">
+                <label for="budget">Выбор региона</label>
+                    <select id="budget">
+                        <option>Выберите вариант</option>
+                        <option value="10–30">Алтайский край</option>
+                        <option value="30–60">Красноярский край</option>
+                    </select>
+            </div>
+            <div class="form__group">
+             <label for="name">Адрес локации</label>
+             <input type="text" placeholder="Выберите адрес" id="date">
+           </div>
+           <div class="form__group">
+             <label for="name">Дата мероприятия</label>
+             <input type="text" placeholder="Выберите дату" id="date">
+           </div>
+           <div class="form__group">
+             <label for="phone">Количество человек</label>
+             <input type="tel" placeholder="(не более 50 детей и взрослых)" id="phone">
+           </div>
+            <div class="form__group">
+             <label for="phone">Стоимость</label>
+             <input type="tel" placeholder="руб." id="phone">
+           </div>
+            <p></p>
+            <div class="form__group">
+                <label>
+                    <input type="checkbox" checked>Организация питания - 500р/чел
+                </label>
+           </div>
+            <div class="form__group">
+                <label>
+                    <input type="checkbox" checked>Услуги аниматоров - 5000 р/сутки
+                </label>
+           </div>
+            <div class="form__group">
+                <label>
+                    <input type="checkbox" checked>Услуги ведущего - 500 р/час
+                </label>
+           </div>
+            <div class="form__group">
+                <label>
+                    <input type="checkbox" checked>Услуги детского такси - 50р + 10 р за каждый км
+                </label>
+           </div>
+            <p></p>
+           <button><a href="{% url 'location' %}">Выпонить</a></button>
+        </fotm>
+      </div>
+    </section>
 {% endblock content %}
