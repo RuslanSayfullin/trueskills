@@ -1,8 +1,22 @@
 {% extends 'trueskills/base.html' %}
+{% load static %}
 
 {% block content %}
     <h1>{{ title }}</h1>
-    <p>Страница выбора зоны в локации</p>
-    <li>Схема локации с возможностью выбрать свободную зону, с указанием стоимости зон.</li>
-     <button><a href="{% url 'booking_page' %}">к бронированию</a></button>
+   <section class="about">
+      <div class="about__info">
+        <h1>Страница выбора зоны в локации</h1>
+        <h2>Выбрать свободную зону, с указанием стоимости зон.</h2>
+        <ul>Цены на услуги:</ul>
+          <li>Организация питания - 500р/чел</li>
+          <li>Услуги аниматоров - 5000 р/сутки</li>
+          <li>Услуги ведущего - 500 р/час</li>
+          <li>Услуги детского такси - 50р + 10 р за каждый км </li>
+        <p></p>
+        <button><a href="{% url 'booking_page' %}">к бронированию</a></button>
+      </div>
+      <div class="about__images">
+        <img class="about__image" src="{% static 'trueskills/img/map.jpg' %}">
+      </div>
+   </section>
 {% endblock content %}
